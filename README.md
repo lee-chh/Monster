@@ -2,13 +2,11 @@
 this repository is for Final project of 23-02 [MAS2011 Introduction to Visual Media Programming]
 
 
-
 Plan Video is : https://youtu.be/Wb_7ZpwKW8k
 
 
-
 ---
-hello. My name is Changhyun Lee and the name of my project is [Who is the next Bo Jackson, who is the next Shohei Ohtani].
+hello. My project is [Who is the next Bo Jackson, who is the next Shohei Ohtani].
 
 What these two men have in common is that they excelled in two areas.
 
