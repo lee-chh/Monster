@@ -2,6 +2,8 @@
 this repository is for Final project of 23-02 [MAS2011 Introduction to Visual Media Programming]
 
 
+Play Video is : https://youtu.be/3cc90Br5B2k
+
 Plan Video is : https://youtu.be/Wb_7ZpwKW8k
 
 
