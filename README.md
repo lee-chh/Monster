@@ -6,7 +6,7 @@ Play Video is : https://youtu.be/3cc90Br5B2k
 
 Final Video is : https://youtu.be/Wb_7ZpwKW8k
 
-New Final Video is : https://youtu.be/y8bVJ8V0sVc
+New Final Video is : https://youtu.be/y8bVJ8V0sVc / https://youtu.be/odV_l_xLR2o
 
 ---
 hello. My project is [Who is the next Bo Jackson, who is the next Shohei Ohtani].
