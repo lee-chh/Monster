@@ -4,8 +4,9 @@ this repository is for Final project of 23-02 [MAS2011 Introduction to Visual Me
 
 Play Video is : https://youtu.be/3cc90Br5B2k
 
-Plan Video is : https://youtu.be/Wb_7ZpwKW8k
+Final Video is : https://youtu.be/Wb_7ZpwKW8k
 
+New Final Video is : https://youtu.be/y8bVJ8V0sVc
 
 ---
 hello. My project is [Who is the next Bo Jackson, who is the next Shohei Ohtani].
