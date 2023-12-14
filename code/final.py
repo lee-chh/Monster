@@ -324,6 +324,7 @@ def update_score(score_type):
         else :
             strike += 1
     elif score_type == 'foul':
+        foul += 1
         if strike < 2 :
             if strike > 1:
                 out+=1
@@ -385,7 +386,7 @@ while running:
     for ball in all_balls:
         ball.update()
 
-    # Bat 객체 업데이트
+    # Bat 객체 업데이트a
     for bat in all_bats:
         bat.update()
 
@@ -397,10 +398,16 @@ while running:
 
     screen.blit(focus,(640-75,hitpoint-75))
 
-    draw_text(screen, "Out    : " + str(out),30,150,25, WHITE)
-    draw_text(screen, "Strike : " + str(strike),30,150,65, WHITE)
+    # 전광판 출력 
+    draw_text(screen, "Out    : ",30,150,25, RED)
+    draw_text(screen, "Strike : ",30,150,65, YELLOW)
     draw_text(screen, "Foul   : " + str(foul),30,150,105, WHITE)
-    draw_text(screen, "Hit     : " + str(hit),30,150,145, WHITE)
+    draw_text(screen, "Hit     : " + str(hit),30,150,145, GREEN)
+    
+    for i in range(out) :
+        pg.draw.circle(screen,RED,(200+i*25-125*(int(i/5)),25*(int(i/5)+1)+4),10)
+    for i in range(strike) : 
+        pg.draw.circle(screen,YELLOW,(200+i*50,85),15)
 
     check += 1
 
