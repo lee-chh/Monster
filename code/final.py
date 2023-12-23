@@ -52,7 +52,7 @@ for i in range(1,4):
 
 font_name = pg.font.match_font('arial')
 
-background = pg.image.load(path.join(img_dir, 'atbat.jpg'))
+background = pg.image.load(path.join(img_dir, 'bg.jpg'))
 background = pg.transform.scale(background,(WIDTH,HEIGHT))
 intro = pg.image.load(path.join(img_dir, 'intro.jpg'))
 intro = pg.transform.scale(intro,(WIDTH,HEIGHT))
@@ -68,11 +68,18 @@ end_s = pg.mixer.Sound(path.join(snd_dir, 'end.mp3'))
 pg.mixer.music.load(path.join(snd_dir, 'bgm.ogg'))
 # --------------------------------------------------------------
 
-def draw_text(surf, text, size, x, y, color=WHITE):
+def draw_text(surf, text, size, x, y, color=WHITE, align="center"):
     font = pg.font.Font(font_name, size)
     text_surface = font.render(text, True, color)
     text_rect = text_surface.get_rect()
-    text_rect.midtop = (x, y)
+
+    if align == "left":
+        text_rect.topleft = (x, y)
+    elif align == "right":
+        text_rect.topright = (x, y)
+    else:  # 기본적으로는 가운데 정렬
+        text_rect.midtop = (x, y)
+
     surf.blit(text_surface, text_rect)
 #
 
@@ -80,10 +87,7 @@ def show_go_screen():
     global game_over, check, out, strike, foul, hit
     screen.fill(BLACK)
     screen.blit(intro,(0,0))
-    # draw_text(screen, "Be the MONSTER!", 64, WIDTH / 2, HEIGHT / 4)
-    # draw_text(screen, "Master all sports and be the Monster!", 22,
-    #           WIDTH / 2, HEIGHT / 2)
-    # draw_text(screen, "Press a key to begin", 18, WIDTH / 2, HEIGHT * 3 / 4)
+
     pg.display.flip()
     waiting = True
     while waiting:
@@ -164,11 +168,11 @@ class Ball(pg.sprite.Sprite):
         if hits:
             for bat in hits:
                 ball_index = ball_images.index(self.original_image)
-                bat_index = bat.image_index  # 변경된 부분: bat.image_index를 사용
+                bat_index = bat.image_index
                 if ball_index == bat_index and not any(bat.collision_occurred for bat in all_bats):
-                    # Ball의 x 좌표가 (WIDTH/2 - 100)에서 (WIDTH/2 + 100) 사이에 있는지 확인
+                    # Ball의 y 좌표가 특정 범위 내에 들어왔다면
                     if hitpoint - 30 < self.rect.y < hitpoint + 30:
-                        # 충돌이면서 x 좌표가 조건에 맞다면 Hit
+                        # 충돌이면서 y 좌표가 조건에 맞다면 Hit
                         if not any(bat.collision_occurred for bat in all_bats):
                             self.update_score('hit')
                             hit_s.play()
@@ -178,7 +182,7 @@ class Ball(pg.sprite.Sprite):
                                 bat.collision_occurred = True
                     else:
                         if not any(bat.collision_occurred for bat in all_bats):
-                            # 충돌이지만 x 좌표가 조건에 맞지 않다면 Foul
+                            # 충돌이지만 y 좌표가 조건에 맞지 않다면 Foul
                             if self.rect.y >= hitpoint + 30 and self.rect.y <= hitpoint + 45:
                                 self.update_score('foul')
                                 foul_s.play()
@@ -233,7 +237,7 @@ class Bat(pg.sprite.Sprite):
 
 
     def update(self):
-        # Space 키가 눌리면 배트 순서 변경
+        # 키를 눌러서 배트 변경
         keys = pg.key.get_pressed()
         if keys[pg.K_3] :
             # Space 키가 눌린 순간에만 실행
@@ -325,6 +329,7 @@ def update_score(score_type):
             strike += 1
     elif score_type == 'foul':
         foul += 1
+        hit += 0.5
         if strike < 2 :
             if strike > 1:
                 out+=1
@@ -399,15 +404,15 @@ while running:
     screen.blit(focus,(640-75,hitpoint-75))
 
     # 전광판 출력 
-    draw_text(screen, "Out    : ",30,150,25, RED)
-    draw_text(screen, "Strike : ",30,150,65, YELLOW)
-    draw_text(screen, "Foul   : " + str(foul),30,150,105, WHITE)
-    draw_text(screen, "Hit     : " + str(hit),30,150,145, GREEN)
+    draw_text(screen, "Out    : ",30,60,25, RED, align="left")
+    draw_text(screen, "Strike : ",30,60,65, YELLOW, align="left")
+    draw_text(screen, "Foul   : " + str(foul),30,60,105, WHITE, align="left")
+    draw_text(screen, "Salary : " + str(hit*1000)+"$",30,60,145, GREEN, align="left")
     
     for i in range(out) :
-        pg.draw.circle(screen,RED,(200+i*25-125*(int(i/5)),25*(int(i/5)+1)+4),10)
+        pg.draw.circle(screen,RED,(180+i*25-125*(int(i/5)),25*(int(i/5)+1)+4),10)
     for i in range(strike) : 
-        pg.draw.circle(screen,YELLOW,(200+i*50,85),15)
+        pg.draw.circle(screen,YELLOW,(180+i*50,85),15)
 
     check += 1
 
