@@ -27,3 +27,5 @@ Star athletes earn billions, and often tens of billions, in salaries.  Who is th
  The game is simple to play.  It's just like basic baseball, there are no balls, and your salary goes up as you hit, and it goes up slightly if you foul out.  You can get up to 10 outs, and you have to see the ball coming and hit it with the right equipment.  You can change equipment with the number keys 1,2,3, and swing with the Enter key.  We won't bore you with the details, just play the game to get the hang of it and become a highly paid athlete!
  
 ---
+This was developed through Pygame.
+
