@@ -2,9 +2,11 @@
 this repository is for Final project of 23-02 [MAS2011 Introduction to Visual Media Programming]
 
 
-Trailer : 
+Trailer : https://youtu.be/iM5bGQsWvcs
 
 Play Video is : https://youtu.be/y8bVJ8V0sVc / https://youtu.be/odV_l_xLR2o
+
+Plan Video is : https://youtu.be/Wb_7ZpwKW8k
 
 ---
 Korean
