@@ -7,7 +7,8 @@ Trailer :
 Play Video is : https://youtu.be/y8bVJ8V0sVc / https://youtu.be/odV_l_xLR2o
 
 ---
- Korean
+Korean
+---
 
 스타 운동 선수들은 수십억, 많게는 수백억의 연봉을 받게 됩니다.  가장 많은 연봉을 받는 운동 선수는 누구일까요?  메시?  호날두?  르브론제임스?  타이거우즈?  바로 이번에 LA다저스로 이적하며 10년 간 924억의 연봉을 받게 된,  오타니 쇼헤이 선수입니다.  오타니의 높은 연봉의 비결은 뭘까요?  바로 투수와 타자 모두 정상급 실력을 가진 것입니다.  즉 혼자서 스타 2인분의 역할을 하니 돈을 많이 받을 수 밖에요.  그럼 오타니 선수 처럼 2인분을 한다면?  더 나아가 여러 종목을 다 잘해서, 여름엔 축구를, 더울 땐 농구를 한다면?  여러분도 수백억을 넘어 수천억의 연봉을 받게 될 겁니다.  바로 괴물이 되는 것이지요.  이 게임을 통해 모든 종목을 섭렵하여 제2의 오타니가 되어 보세요!
 
@@ -16,7 +17,8 @@ Play Video is : https://youtu.be/y8bVJ8V0sVc / https://youtu.be/odV_l_xLR2o
 게임 방법은 간단합니다.  기본 야구룰과 똑같으며, 볼은 없습니다.  안타를 치는 만큼 연봉이 올라가고 파울을 치더라도 연봉이 소폭 상승합니다.  단 아웃이 10개까지 가능하고, 날라오는 공을 보고 적절한 장비로 공을 쳐야합니다.  숫자키 1,2,3으로 장비를 변경할 수 있고, Enter 키로 스윙을 할 수 있습니다.  자세한 설명은 생략하고 직접 게임을 해보며 방법을 익혀 높은 연봉의 운동 선수가 돼보세요!
 
 ---
- English
+English
+---
 
 Star athletes earn billions, and often tens of billions, in salaries.  Who is the highest paid athlete?  Messi? Ronaldo? LeBron James? Tiger Woods? It's Shohei Ohtani, who just signed with the Los Angeles Dodgers, earning $92.4 billion over 10 years.  What's the secret to his high salary?  He's a top-notch pitcher and a top-notch hitter, which means that he alone is worth a lot of money because he's a two-way star. But what if you could be a two-way star like him? Or even better, you could be a multi-sport athlete, playing soccer in the summer and basketball when it's hot? You'd be earning tens of billions, even hundreds of billions. You'd be a monster. Play this game and become the next Ohtani by mastering all the sports!
 
